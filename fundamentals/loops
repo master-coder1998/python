@@ -1,1 +1,9 @@
+for number in range (33,35)
+  print(number)
 
+===================
+for number in range(1,101)
+  if number % 2 ==1 :
+    print(number)
+
+===============
