@@ -1,0 +1,14 @@
+dogs ={'fido':8, 'sara':8, 'matt':20}
+print(dogs)
+
+
+
+words =[" apple", "banana", "cherry"]
+definition =["A fruit that is red or green","A long yellow fruit", "A small red fruit"]
+
+cool_dict ={}
+
+for i in range (len (words)):
+    cool_dict [words[i]] = definition [i]
+
+print(cool_dict)

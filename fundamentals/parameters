@@ -1,0 +1,17 @@
+def multiply_numbers(num1, num2):
+    return(num1 * num2)
+
+multiply_numbers(4, 5)
+multiply_numbers(7, 3)
+multiply_numbers(10, 2)
+
+def add_numbers(num1, num2):
+    return(num1 + num2)
+
+print(add_numbers(4, 5))
+
+def print_list(items):
+    for item in items:
+        print(item)
+
+print_list(['apple', 'banana', 'cherry'])        
