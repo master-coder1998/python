@@ -1,1 +1,9 @@
+fav_games  = ['mario 64', 'worms', 'octopath', 'traveler']
 
+for game in fav_games:
+	print(game)
+
+fav_games.insert(0, 'paper mario')
+fav_games.append('paper mario')
+
+print(len(fav_games))
