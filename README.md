@@ -24,10 +24,25 @@ python/
 │   ├── parameters            # Function parameters
 │   └── README.md             # Guide to intermediate topics
 └── projects/                 # Practical applications
-    ├── Pickalator/           # Cricket match predictor project
-    │   ├── Pickalator.md    # Project documentation
-    │   └── Pickalator.py    # Main application
-    └── Wordcount/            # Text frequency analyzer project
+    ├── Captcha/              # CAPTCHA verification system
+    │   ├── README.md         # Project documentation
+    │   └── Captcha.py        # Main application
+    ├── Daily news feeds/     # News scraper from Hacker News
+    │   ├── README.md         # Project documentation
+    │   └── Daily news feeds.py  # Main application
+    ├── Get all links/        # Web link extractor
+    │   ├── README.md         # Project documentation
+    │   └── get all links.py  # Main application
+    ├── Hashing Password/     # Password hash generator
+    │   ├── README.md         # Project documentation
+    │   └── Hashing Password.py  # Main application
+    ├── Pickalator/           # Cricket match predictor
+    │   ├── Pickalator.md     # Project documentation
+    │   └── Pickalator.py     # Main application
+    ├── Rock Paper Scissors/  # Interactive game
+    │   ├── README.md         # Project documentation
+    │   └── Rock Paper Scissors.py  # Main application
+    └── Wordcount/            # Text frequency analyzer
         ├── Word Counter.md   # Project documentation
         └── wordcount.py      # Main application
 ```
@@ -106,6 +121,104 @@ Intermediate Python concepts and best practices (planned content).
 
 Real-world applications demonstrating Python concepts in action.
 
+#### 🔐 CAPTCHA Verification System
+
+A graphical CAPTCHA generator and verification system using Tkinter GUI.
+
+**Features:**
+- Random 6-digit CAPTCHA image generation
+- User-friendly Tkinter interface
+- Verification system for user input
+- Refresh functionality for new CAPTCHAs
+- Visual feedback with message boxes
+
+**Files:**
+- [README.md](projects/Captcha/README.md) - Project documentation
+- [Captcha.py](projects/Captcha/Captcha.py) - Main application
+
+**Usage:**
+```bash
+python projects/Captcha/Captcha.py
+```
+
+**Key Concepts:** GUI programming (Tkinter), image processing, libraries (captcha, PIL)
+
+---
+
+#### 📰 Daily News Feeds - Hacker News Scraper
+
+Web scraper that fetches and stores the latest news from Hacker News in organized files.
+
+**Features:**
+- Multi-page scraping (up to 20 pages)
+- Extracts rank, title, source, URL, author, score, timestamp
+- Error handling for connection issues
+- Organized output in separate files
+- Verbose mode for progress tracking
+- Input validation
+
+**Files:**
+- [README.md](projects/Daily%20news%20feeds/README.md) - Project documentation
+- [Daily news feeds.py](projects/Daily%20news%20feeds/Daily%20news%20feeds.py) - Main application
+
+**Usage:**
+```bash
+python projects/Daily\ news\ feeds/Daily\ news\ feeds.py
+```
+
+**Key Concepts:** Web scraping, HTTP requests, HTML parsing (BeautifulSoup), file operations
+
+---
+
+#### 🔗 Get All Links - Web Link Extractor
+
+A web scraper that extracts all hyperlinks from a given website.
+
+**Features:**
+- URL input validation
+- Automatic protocol handling (http/https)
+- Extracts all hyperlinks from webpage
+- Smart URL formatting
+- Error handling for network requests
+
+**Files:**
+- [README.md](projects/Get%20all%20links/README.md) - Project documentation
+- [get all links.py](projects/Get%20all%20links/get%20all%20links.py) - Main application
+
+**Usage:**
+```bash
+python projects/Get\ all\ links/get\ all\ links.py
+```
+
+**Key Concepts:** Web scraping, URL parsing, HTML parsing (BeautifulSoup), input validation
+
+---
+
+#### 🔐 Hashing Password - Secure Hash Generator
+
+Command-line utility for generating cryptographic password hashes using multiple algorithms.
+
+**Features:**
+- Multiple hash algorithms (SHA-256, SHA-512, MD5)
+- SHA-256 as default (secure)
+- Command-line interface with argparse
+- Hexadecimal output
+- No external dependencies (uses hashlib)
+
+**Files:**
+- [README.md](projects/Hashing%20Password/README.md) - Project documentation
+- [Hashing Password.py](projects/Hashing%20Password/Hashing%20Password.py) - Main application
+
+**Usage:**
+```bash
+python projects/Hashing\ Password/Hashing\ Password.py mypassword
+python projects/Hashing\ Password/Hashing\ Password.py mypassword --type sha512
+```
+
+**Key Concepts:** Cryptography, hashlib, argparse, command-line arguments
+
+---
+
 #### 🏏 Pickalator - Cricket Match Predictor
 
 A fun prediction tool that calculates team winning probabilities based on rankings with randomization.
@@ -117,7 +230,7 @@ A fun prediction tool that calculates team winning probabilities based on rankin
 - Probability visualization
 
 **Files:**
-- [Pickalator.md](projects/Pickalator/Pickalator.md) - Project documentation and details
+- [Pickalator.md](projects/Pickalator/Pickalator.md) - Project documentation
 - [Pickalator.py](projects/Pickalator/Pickalator.py) - Main application
 
 **Usage:**
@@ -126,6 +239,31 @@ python projects/Pickalator/Pickalator.py
 ```
 
 **Key Concepts:** Variables, arithmetic, random module, time delays, conditionals, f-strings
+
+---
+
+#### 🎮 Rock Paper Scissors - Game Against Computer
+
+Interactive command-line game where you play against the computer over multiple rounds.
+
+**Features:**
+- Multi-round gameplay
+- Smart input handling (accept full words or letters)
+- Real-time scoring
+- Input validation
+- Clear output with results
+- Random AI opponent
+
+**Files:**
+- [README.md](projects/Rock%20Paper%20Scissors/README.md) - Project documentation
+- [Rock Paper Scissors.py](projects/Rock%20Paper%20Scissors/Rock%20Paper%20Scissors.py) - Main application
+
+**Usage:**
+```bash
+python projects/Rock\ Paper\ Scissors/Rock\ Paper\ Scissors.py
+```
+
+**Key Concepts:** Game logic, random module, input validation, loops, conditionals
 
 ---
 
@@ -142,7 +280,6 @@ Sophisticated text analysis tool that processes lyrics/text and generates word f
 **Files:**
 - [Word Counter.md](projects/Wordcount/Word%20Counter.md) - Project documentation and details
 - [wordcount.py](projects/Wordcount/wordcount.py) - Main application
-- [README.md](projects/Wordcount/README.md) - Complete project guide
 
 **Usage:**
 ```bash
@@ -150,134 +287,6 @@ python projects/Wordcount/wordcount.py
 ```
 
 **Key Concepts:** String manipulation, dictionaries, sorting, operator module, data processing
-
----
-
-#### 🎮 Rock Paper Scissors - Interactive Game
-
-Play the classic Rock, Paper, Scissors game against a computer opponent over multiple rounds.
-
-**Features:**
-- Multi-round gameplay with score tracking
-- Smart input handling (accepts full words or single letters)
-- Real-time score updates
-- Input validation
-- Random computer AI
-
-**Files:**
-- [README.md](projects/Rock%20Paper%20Scissors/README.md) - Project guide
-- [Rock Paper Scissors.py](projects/Rock%20Paper%20Scissors/Rock%20Paper%20Scissors.py) - Main game
-
-**Usage:**
-```bash
-python projects/"Rock Paper Scissors.py"
-```
-
-**Key Concepts:** Random module, conditional logic, loops, input validation, dictionaries
-
----
-
-#### 🔐 Hashing Password - Password Hash Generator
-
-Command-line utility for generating cryptographic hashes of passwords using SHA-256, SHA-512, or MD5.
-
-**Features:**
-- Multiple hash algorithms (SHA-256, SHA-512, MD5)
-- Command-line argument parsing
-- Secure default algorithm
-- Hexadecimal output
-- Simple and secure password hashing
-
-**Files:**
-- [README.md](projects/Hashing%20Password/README.md) - Complete documentation
-- [Hashing Password.py](projects/Hashing%20Password/Hashing%20Password.py) - Main application
-
-**Usage:**
-```bash
-python "Hashing Password.py" mypassword -t sha256
-```
-
-**Key Concepts:** Cryptography, hashlib module, argparse, command-line tools
-
----
-
-#### 🔗 Get All Links - Web Link Extractor
-
-Web scraper that extracts all hyperlinks from a given website and displays them.
-
-**Features:**
-- URL input validation with protocol detection
-- Extracts all hyperlinks from webpage
-- Automatic https:// protocol handling
-- Simple command-line interface
-- Error handling for network issues
-
-**Files:**
-- [README.md](projects/Get%20all%20links/README.md) - Project documentation
-- [Get all links.py](projects/Get%20all%20links/Get%20all%20links.py) - Main scraper
-
-**Usage:**
-```bash
-python "Get all links.py"
-# Enter URL: google.com
-```
-
-**Key Concepts:** Web scraping, BeautifulSoup, HTTP requests, HTML parsing
-
----
-
-#### 📰 Daily News Feeds - Hacker News Scraper
-
-Web scraper that fetches the latest news from Hacker News and saves organized article data to text files.
-
-**Features:**
-- Multi-page scraping (up to 20 pages)
-- Detailed article extraction (title, URL, author, score, timestamp)
-- Organized file output with HackerNews folder
-- Error handling and connection management
-- Optional verbose output mode
-
-**Files:**
-- [README.md](projects/Daily%20news%20feeds/README.md) - Full documentation
-- [Daily news feeds.py](projects/Daily%20news%20feeds/Daily%20news%20feeds.py) - Main scraper
-
-**Usage:**
-```bash
-python "Daily news feeds.py"
-# Enter pages: 5
-# Verbose mode: y
-```
-
-**Key Concepts:** Web scraping, BeautifulSoup, requests, file I/O, error handling
-
----
-
-#### 🔐 CAPTCHA - Verification System
-
-CAPTCHA image generator with GUI for user verification using Tkinter.
-
-**Features:**
-- Random 6-digit CAPTCHA generation
-- Graphical user interface with Tkinter
-- Image verification against input
-- Refresh functionality
-- Visual feedback with message boxes
-
-**Files:**
-- [README.md](projects/Captcha/README.md) - Complete guide
-- [Captcha.py](projects/Captcha/Captcha.py) - Main application
-
-**Usage:**
-```bash
-python projects/Captcha/Captcha.py
-```
-
-**Prerequisites:**
-```bash
-pip install captcha
-```
-
-**Key Concepts:** GUI development with Tkinter, image generation, event handling, file I/O
 
 ---
 
@@ -307,14 +316,15 @@ pip install captcha
 
 ## 📊 Current Projects
 
-| Project | Status | Description | Key Skills |
-|---------|--------|-------------|------------|
-| Dictionary Examples | ✅ Complete | Key-value operations | Dictionaries, loops |
-| Function Basics | ✅ Complete | Function creation | Functions, scope |
-| List Operations | ✅ Complete | List manipulation | Lists, methods |
-| Loop Patterns | ✅ Complete | Iteration techniques | For loops, ranges |
-| Pickalator | ✅ Complete | Match predictor | Random, conditionals |
-| Word Counter | ✅ Complete | Text analyzer | Dicts, sorting, strings |
+| Project | Type | Status | Description | Key Skills |
+|---------|------|--------|-------------|------------|
+| CAPTCHA System | GUI App | ✅ Complete | Image CAPTCHA with verification | Tkinter, image processing, libraries |
+| Daily News Feeds | Web Scraper | ✅ Complete | Hacker News scraper | BeautifulSoup, requests, file I/O |
+| Get All Links | Web Scraper | ✅ Complete | Extract links from websites | BeautifulSoup, requests, URL parsing |
+| Hashing Password | CLI Tool | ✅ Complete | Password hash generator | Cryptography, argparse, hashlib |
+| Pickalator | Game Logic | ✅ Complete | Cricket match predictor | Random, conditionals, time delays |
+| Rock Paper Scissors | Game | ✅ Complete | Interactive game vs computer | Game logic, random, input validation |
+| Word Counter | Data Analysis | ✅ Complete | Text frequency analyzer | Dicts, sorting, string manipulation |
 
 ## 🔮 Future Project Ideas
 
@@ -404,7 +414,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-**Last Updated:** January 26, 2026
+**Last Updated:** February 16, 2026
 
 ⭐ **If you find this repository helpful for your Python learning journey, consider giving it a star!**
 
