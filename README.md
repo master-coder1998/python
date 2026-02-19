@@ -42,9 +42,9 @@ python/
     ├── Rock Paper Scissors/  # Interactive game
     │   ├── README.md         # Project documentation
     │   └── Rock Paper Scissors.py  # Main application
-    └── Wordcount/            # Text frequency analyzer
-        ├── Word Counter.md   # Project documentation
-        └── wordcount.py      # Main application
+    │── Wordcount/            # Text frequency analyzer
+    │   ├── Word Counter.md   # Project documentation
+    │   └── wordcount.py      # Main application
     └── Audio Book/           # PDF to MP3 converter
         ├── README.md         # Project documentation
         └── Audio-book.py     # Main application
