@@ -45,6 +45,9 @@ python/
     └── Wordcount/            # Text frequency analyzer
         ├── Word Counter.md   # Project documentation
         └── wordcount.py      # Main application
+    └── Audio Book/           # PDF to MP3 converter
+        ├── README.md         # Project documentation
+        └── Audio-book.py     # Main application
 ```
 
 ## 🚀 Quick Start
@@ -325,6 +328,8 @@ python projects/Wordcount/wordcount.py
 | Pickalator | Game Logic | ✅ Complete | Cricket match predictor | Random, conditionals, time delays |
 | Rock Paper Scissors | Game | ✅ Complete | Interactive game vs computer | Game logic, random, input validation |
 | Word Counter | Data Analysis | ✅ Complete | Text frequency analyzer | Dicts, sorting, string manipulation |
+| Audio Book | Audio Tool | ✅ Complete | Convert PDF to MP3 using gTTS | gTTS, PyPDF2, file I/O |
+
 
 ## 🔮 Future Project Ideas
 
@@ -384,9 +389,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## 👤 Author
 
 **Master Coder**
-- Learning Focus: Python Programming & Software Development
-- GitHub: [@master-coder1998](https://github.com/master-coder1998)
-- Goal: Build practical skills through hands-on projects
+https://github.com/master-coder1998
 
 ## 📈 Progress Tracker
 
