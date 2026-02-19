@@ -1,0 +1,5 @@
+# Ignore generated audio files
+*.mp3
+
+# Optionally ignore local PDFs (uncomment if you don't want PDF tracked)
+# *.pdf
